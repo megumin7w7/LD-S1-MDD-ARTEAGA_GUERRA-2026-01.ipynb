@@ -1,49 +1,123 @@
-# LD-S1-MDD-ARTEAGA_GUERRA-2026-01.ipynb
+Python Pandas Jupyter
 
-<div align = center>
-  
-<a href="https://discord.gg/AYbJ9MJez7">
-    <img alt="Dynamic JSON Badge" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fdiscordapp.com%2Fapi%2Finvites%2FmT5YqjaJFh%3Fwith_counts%3Dtrue&query=%24.approximate_member_count&suffix=%20members&style=for-the-badge&logo=discord&logoSize=auto&label=The%20HyDe%20Project&labelColor=ebbcba&color=c79bf0">
-  </a>
+Análisis exploratorio y predictivo para la retención de clientes en telecomunicaciones.
+
+
+ 
+ Contexto 
+    
+Instalación
+    
+ Análisis 
+    
+ Resultados 
+    
+ Conclusiones 
+ 
+
+
+
+Churn Banner
+
+
+
+El presente proyecto aborda el problema de la fuga de clientes (Churn) en una empresa de telecomunicaciones (Telco). El objetivo principal es transformar datos crudos en conocimiento accionable que permita al equipo de negocio tomar decisiones estratégicas para reducir la pérdida de ingresos.
+
+Se utilizó el enfoque de Minería de Datos propuesto por Gironés Roig et al. (2017), transitando por las fases de Datos, Información, Patrones y Conocimiento.
+
+
+
+Para ejecutar este análisis de forma local, asegúrate de tener Python instalado.
+
+Clona el repositorio:
+git clone https://github.com/tu-usuario/telco-churn-analysis.git
+Instala las dependencias necesarias:
+shell
+
+pip install -r requirements.txt
+(Principales librerías: Pandas, Numpy, Matplotlib, Seaborn, Scipy)
+Ejecuta el notebook principal:
+shell
+
+jupyter notebook Laboratorio_1_Telco.ipynb
+<div align="right">
+<br>
+<a href="#"><kbd> <br> 🡅 <br> </kbd></a>
 </div>
 
-###### _<div align="right"><a id=-design-by-t2></a><sub>// design by t2</sub></div>_
+<a id="analisis"></a>
+<img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=CCA9DD&vCenter=true&width=435&height=25&lines=ANÁLISIS" width="450"/>
 
-![hyde_banner](Source/assets/hyde_banner.png)
+El análisis se estructuró en dos grandes bloques:
 
-<!--
-Multi-language README support
--->
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
-[![es](https://img.shields.io/badge/lang-es-yellow.svg)](Source/docs/README.es.md)
-[![de](https://img.shields.io/badge/lang-de-black.svg)](Source/docs/README.de.md)
-[![nl](https://img.shields.io/badge/lang-nl-green.svg)](Source/docs/README.nl.md)
-[![中文](https://img.shields.io/badge/lang-中文-orange.svg)](Source/docs/README.zh.md)
-[![fr](https://img.shields.io/badge/lang-fr-blue.svg)](Source/docs/README.fr.md)
-[![ar](https://img.shields.io/badge/lang-AR-orange.svg)](Source/docs/README.ar.md)
-[![pt-br](https://img.shields.io/badge/lang-pt--br-006400.svg)](Source/docs/README.pt-br.md)
-[![tr](https://img.shields.io/badge/lang-tr-e30a17.svg)](Source/docs/README.tr.md)
+1. Exploración de Datos (EDA)
+Se identificó un desbalance en la variable objetivo (26.5% de fugas) y se limpiaron datos inconsistentes en la columna TotalCharges.
+
+2. Pruebas Estadísticas
+Para validar hipótesis de negocio, se aplicaron tests de significancia:
+
+Mann-Whitney U: Confirmó que la antigüedad (tenure) y los cargos mensuales difieren significativamente entre clientes que se quedan y los que se van.
+Chi-cuadrado + V de Cramér: Reveló que el tipo de contrato (Contract) es la variable categórica con mayor fuerza de asociación al Churn.
+<div align="center">
+<table><tr><td>
+
+Tenure vs Churn
+
+</td><td>
+
+Contract vs Churn
+
+</td></tr></table>
+</div>
+
+<div align="right">
+<br>
+<a href="#"><kbd> <br> 🡅 <br> </kbd></a>
+</div>
+
+<a id="resultados"></a>
+<img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=CCA9DD&vCenter=true&width=435&height=25&lines=RESULTADOS" width="450"/>
+
+El perfil de cliente con mayor riesgo de fuga se define por tres características clave:
+
+Característica
+Hallazgo
+Contrato	Clientes con contrato Month-to-month (mensual).
+Antigüedad	Clientes nuevos (tenure bajo).
+Precios	Clientes con cargos mensuales altos (MonthlyCharges).
+
+Matriz de Correlación
+Se detectó una correlación negativa moderada entre antigüedad y fuga: a mayor tiempo en la empresa, menor probabilidad de cancelación.
 
 <div align="center">
-
-<br>
-
-<a href="#installation"><kbd> <br> Installation <br> </kbd></a>&ensp;&ensp;
-<a href="#updating"><kbd> <br> Updating <br> </kbd></a>&ensp;&ensp;
-<a href="#themes"><kbd> <br> Themes <br> </kbd></a>&ensp;&ensp;
-<a href="#styles"><kbd> <br> Styles <br> </kbd></a>&ensp;&ensp;
-<a href="CONTRIBUTING.md"><kbd> <br> Contributing <br> </kbd></a>&ensp;&ensp;
-<a href="KEYBINDINGS.md"><kbd> <br> Keybindings <br> </kbd></a>&ensp;&ensp;
-<a href="https://www.youtube.com/watch?v=2rWqdKU1vu8&list=PLt8rU_ebLsc5yEHUVsAQTqokIBMtx3RFY&index=1"><kbd> <br> Youtube <br> </kbd></a>&ensp;&ensp;
-<a href="https://hydeproject.pages.dev/"><kbd> <br> Wiki <br> </kbd></a>&ensp;&ensp;
-<a href="https://discord.gg/qWehcFJxPa"><kbd> <br> Discord <br> </kbd></a>
-
-
-
-  <a href="#-design-by-t2"><kbd> <br> 🡅 <br> </kbd></a>
+<img src="assets/correlation_matrix.png" alt="Correlation Matrix" width="70%"/>
 </div>
 
-<a id="hydevm"></a>
-<img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=CCA9DD&vCenter=true&width=435&height=25&lines=HYDEVM" width="450"/>
+<div align="right">
+<br>
+<a href="#"><kbd> <br> 🡅 <br> </kbd></a>
+</div>
+
+<a id="conclusiones"></a>
+<img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=CCA9DD&vCenter=true&width=435&height=25&lines=CONCLUSIONES" width="450"/>
+
+Basado en los datos, la recomendación estratégica principal es:
+
+[!IMPORTANT]
+Implementar una campaña de retención agresiva enfocada en migrar clientes de contrato mensual a contratos anuales, ofreciendo incentivos durante los primeros meses de vida del cliente.
+
+Esto se justifica en que el compromiso a largo plazo (contratos anuales) reduce drásticamente la tasa de cancelación.
+
+<div align="right">
+<br>
+<a href="#"><kbd> <br> 🡅 <br> </kbd></a>
+</div>
+
+<div align="center">
+<br>
+<img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=CCA9DD&vCenter=true&width=435&height=25&lines=GRACIAS" width="450"/>
+</div>
+
+<div align="right">
+<sub>Last edited on: 27/03/2026<span id="last-edited"></span></sub>
+</div>
