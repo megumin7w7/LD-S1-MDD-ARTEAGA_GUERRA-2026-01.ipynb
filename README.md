@@ -1,6 +1,6 @@
 <div align="center">
 
-# 📊 Proyecto de Minería de Datos – Laboratorio 1
+#  Proyecto de Minería de Datos – Laboratorio 1
 
 <img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=28&pause=1000&color=4A90E2&center=true&vCenter=true&width=650&lines=Minería+de+Datos;Análisis+Exploratorio;Telco+Customer+Churn;Python+y+Jupyter" />
 
