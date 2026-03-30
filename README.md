@@ -31,7 +31,7 @@
 
 ## 📌 Descripción
 
-Este repositorio contiene el desarrollo del **Laboratorio 1 de Minería de Datos** (Autor: Arteaga Guerra Pedro), correspondiente a la Semana 1 del curso impartido por la docente Pilar Rocio Sayan Mejia (TECSUP 2026-I). 
+Este repositorio contiene el desarrollo de los **Laboratorios de Minería de Datos** (Autor: Arteaga Guerra Pedro), correspondiente a las Semanas  del curso impartido por la docente Pilar Rocio Sayan Mejia (TECSUP 2026-I). 
 
 El proyecto se centra en la aplicación de técnicas de **Análisis Exploratorio de Datos (EDA)** y preprocesamiento utilizando Python sobre datos del sector de telecomunicaciones. Además, incluye la aplicación de pruebas estadísticas (Mann-Whitney U, Chi-cuadrado y V de Cramér) para validar hipótesis sobre el comportamiento de los usuarios.
 
