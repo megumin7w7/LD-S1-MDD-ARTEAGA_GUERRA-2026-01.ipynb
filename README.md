@@ -17,7 +17,7 @@
 
 ---
 
-## 👤 Información del Repositorio
+##  Información del Repositorio
 
 | Campo | Detalle |
 |---|---|
@@ -30,7 +30,7 @@
 
 ---
 
-## 📌 Descripción General
+## Descripción General
 
 Este repositorio contiene el desarrollo completo de los **12 Laboratorios del curso de Minería de Datos**, organizados en tres unidades temáticas que cubren desde los fundamentos del análisis exploratorio hasta modelos avanzados de clasificación, aprendizaje no supervisado y métodos probabilísticos de NLP.
 
@@ -64,9 +64,9 @@ Cada laboratorio incluye:
 
 ---
 
-## 📚 Contenido por Unidad y Semana
+## Contenido por Unidad y Semana
 
-### 🔵 UNIDAD 1 — Fundamentos y Preparación de Datos (Semanas 1–5)
+### UNIDAD 1 — Fundamentos y Preparación de Datos (Semanas 1–5)
 
 | Semana | Tema | Dataset | Técnicas Clave |
 |:---:|---|---|---|
@@ -80,7 +80,7 @@ Cada laboratorio incluye:
 
 ---
 
-### 🟢 UNIDAD 2 — Modelos de Clasificación (Semanas 6–8)
+### UNIDAD 2 — Modelos de Clasificación (Semanas 6–8)
 
 | Semana | Tema | Dataset | Técnicas Clave |
 |:---:|---|---|---|
@@ -96,7 +96,7 @@ Cada laboratorio incluye:
 
 ---
 
-### 🔴 UNIDAD 3 — Modelos Avanzados y No Supervisados (Semanas 9–12)
+### UNIDAD 3 — Modelos Avanzados y No Supervisados (Semanas 9–12)
 
 | Semana | Tema | Dataset | Técnicas Clave |
 |:---:|---|---|---|
@@ -115,7 +115,7 @@ Cada laboratorio incluye:
 
 ---
 
-## 💡 Hallazgos Clave del Curso
+## Hallazgos Clave del Curso
 
 1. **Métricas vs Negocio:** El Accuracy es engañoso con datos desbalanceados. Recall, F1-Score y AUC-ROC son las métricas relevantes cuando el costo de los errores es asimétrico (FN >> FP en churn, fraude y diagnóstico médico).
 
@@ -129,7 +129,7 @@ Cada laboratorio incluye:
 
 ---
 
-## ⚙️ Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 | Categoría | Herramientas |
 |---|---|
@@ -145,7 +145,7 @@ Cada laboratorio incluye:
 
 ---
 
-## 🚀 Cómo ejecutar los notebooks
+##  Cómo ejecutar los notebooks
 
 ```bash
 # 1. Clonar el repositorio
@@ -160,7 +160,7 @@ pip install pandas numpy matplotlib seaborn scikit-learn xgboost \
 jupyter notebook LAB_S09_XGBoost_Boosting.ipynb
 ```
 
-> 💡 **Recomendación:** Cada notebook fue diseñado para Google Colab. Para ejecutarlos localmente, verifica que los paths de los datasets apunten a tu directorio local.
+> **Recomendación:** Cada notebook fue diseñado para Google Colab. Para ejecutarlos localmente, verifica que los paths de los datasets apunten a tu directorio local.
 
 ---
 
