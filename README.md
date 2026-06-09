@@ -1,6 +1,6 @@
 <div align="center">
 
-# 📊 Laboratorios de Minería de Datos
+# Laboratorios de Minería de Datos
 ### TECSUP 2026-I | Curso: Minería de Datos (C64893)
 
 <img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=24&pause=1000&color=4A90E2&center=true&vCenter=true&width=700&lines=Minería+de+Datos+—+12+Semanas;Clasificación+%7C+Clustering+%7C+NLP;Python+%7C+scikit-learn+%7C+Keras;Arteaga+Guerra%2C+Pedro+Sebastian" />
